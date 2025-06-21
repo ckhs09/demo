@@ -1,0 +1,554 @@
+2024-11-24T08:52:58.175+08:00  INFO 69376 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.13 with PID 69376 (C:\Users\m1950\Desktop\demo\target\classes started by m1950 in C:\Users\m1950\Desktop\demo)
+2024-11-24T08:52:58.183+08:00 DEBUG 69376 --- [main] com.example.demo.DemoApplication         : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-24T08:52:58.183+08:00  INFO 69376 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-11-24T08:52:58.948+08:00  INFO 69376 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-24T08:52:59.014+08:00  INFO 69376 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 4 JPA repository interfaces.
+2024-11-24T08:52:59.698+08:00  INFO 69376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-24T08:52:59.715+08:00  INFO 69376 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-24T08:52:59.715+08:00  INFO 69376 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-24T08:52:59.798+08:00  INFO 69376 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2024-11-24T08:52:59.798+08:00  INFO 69376 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1566 ms
+2024-11-24T08:52:59.879+08:00 DEBUG 69376 --- [main] com.example.demo.config.JwtAuthFilter    : Filter 'jwtAuthFilter' configured for use
+2024-11-24T08:52:59.981+08:00  INFO 69376 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-24T08:53:00.054+08:00  INFO 69376 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-24T08:53:00.097+08:00  INFO 69376 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-24T08:53:00.375+08:00  INFO 69376 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-24T08:53:00.415+08:00  INFO 69376 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-24T08:53:00.707+08:00  INFO 69376 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1214c98b
+2024-11-24T08:53:00.723+08:00  INFO 69376 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-24T08:53:01.615+08:00  INFO 69376 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-24T08:53:01.747+08:00  INFO 69376 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-24T08:53:02.082+08:00  INFO 69376 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-24T08:53:02.681+08:00  WARN 69376 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-24T08:53:02.698+08:00  WARN 69376 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: bf30c805-11f5-4196-885c-01aaa107c5fe
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-11-24T08:53:02.731+08:00  INFO 69376 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-24T08:53:03.247+08:00  INFO 69376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2024-11-24T08:53:03.259+08:00  INFO 69376 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 5.578 seconds (process running for 5.961)
+2024-11-24T08:54:24.389+08:00  INFO 69376 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-24T08:54:24.391+08:00  INFO 69376 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-24T08:54:24.395+08:00  INFO 69376 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-11-24T10:22:34.250+08:00  WARN 69376 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h7m33s340ms659?s300ns).
+2024-11-24T12:07:35.678+08:00  WARN 69376 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=25m30s947ms777?s600ns).
+2024-11-24T13:32:35.810+08:00  WARN 69376 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m28s773ms483?s700ns).
+2024-11-24T14:10:44.992+08:00  WARN 69376 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=38m9s183ms504?s).
+2024-11-24T14:27:55.815+08:00  WARN 69376 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m40s618ms567?s500ns).
+2024-11-24T14:39:19.709+08:00  WARN 69376 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m23s872ms465?s300ns).
+2024-11-24T15:30:39.153+08:00  WARN 69376 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m49s289ms746?s300ns).
+2024-11-24T15:56:09.289+08:00  WARN 69376 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m30s89ms926?s600ns).
+2024-11-24T16:08:52.483+08:00  INFO 37816 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.13 with PID 37816 (C:\Users\m1950\Desktop\demo\target\classes started by m1950 in C:\Users\m1950\Desktop\demo)
+2024-11-24T16:08:52.490+08:00 DEBUG 37816 --- [main] com.example.demo.DemoApplication         : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-24T16:08:52.493+08:00  INFO 37816 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-11-24T16:08:54.181+08:00  INFO 37816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-24T16:08:54.320+08:00  INFO 37816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114 ms. Found 4 JPA repository interfaces.
+2024-11-24T16:08:55.588+08:00  INFO 37816 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-24T16:08:55.614+08:00  INFO 37816 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-24T16:08:55.615+08:00  INFO 37816 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-24T16:08:55.792+08:00  INFO 37816 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2024-11-24T16:08:55.793+08:00  INFO 37816 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3198 ms
+2024-11-24T16:08:55.930+08:00 DEBUG 37816 --- [main] com.example.demo.config.JwtAuthFilter    : Filter 'jwtAuthFilter' configured for use
+2024-11-24T16:08:56.156+08:00  INFO 37816 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-24T16:08:56.270+08:00  INFO 37816 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-24T16:08:56.356+08:00  INFO 37816 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-24T16:08:57.127+08:00  INFO 37816 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-24T16:08:57.223+08:00  INFO 37816 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-24T16:08:57.756+08:00  INFO 37816 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@76e9eed8
+2024-11-24T16:08:57.761+08:00  INFO 37816 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-24T16:08:59.624+08:00  INFO 37816 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-24T16:08:59.819+08:00  INFO 37816 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-24T16:09:00.436+08:00  INFO 37816 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-24T16:09:01.553+08:00  WARN 37816 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-24T16:09:01.588+08:00  WARN 37816 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 5b2b56bb-a161-4039-8cad-44553e61e741
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-11-24T16:09:01.651+08:00  INFO 37816 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-24T16:09:02.639+08:00  INFO 37816 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2024-11-24T16:09:02.658+08:00  INFO 37816 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 11.239 seconds (process running for 12.179)
+2024-11-24T16:09:33.130+08:00  INFO 37816 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-24T16:09:33.131+08:00  INFO 37816 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-24T16:09:33.135+08:00  INFO 37816 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-11-24T19:09:15.051+08:00  INFO 94964 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.13 with PID 94964 (C:\Users\m1950\Desktop\demo\target\classes started by m1950 in C:\Users\m1950\Desktop\demo)
+2024-11-24T19:09:15.054+08:00 DEBUG 94964 --- [main] com.example.demo.DemoApplication         : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-24T19:09:15.055+08:00  INFO 94964 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-11-24T19:09:15.857+08:00  INFO 94964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-24T19:09:15.924+08:00  INFO 94964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 4 JPA repository interfaces.
+2024-11-24T19:09:16.494+08:00  INFO 94964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-24T19:09:16.505+08:00  INFO 94964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-24T19:09:16.505+08:00  INFO 94964 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-24T19:09:16.571+08:00  INFO 94964 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2024-11-24T19:09:16.572+08:00  INFO 94964 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1477 ms
+2024-11-24T19:09:16.636+08:00 DEBUG 94964 --- [main] com.example.demo.config.JwtAuthFilter    : Filter 'jwtAuthFilter' configured for use
+2024-11-24T19:09:16.740+08:00  INFO 94964 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-24T19:09:16.804+08:00  INFO 94964 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-24T19:09:16.836+08:00  INFO 94964 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-24T19:09:17.090+08:00  INFO 94964 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-24T19:09:17.123+08:00  INFO 94964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-24T19:09:17.366+08:00  INFO 94964 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@474619d9
+2024-11-24T19:09:17.367+08:00  INFO 94964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-24T19:09:18.237+08:00  INFO 94964 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-24T19:09:18.310+08:00  INFO 94964 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-24T19:09:18.639+08:00  INFO 94964 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-24T19:09:19.181+08:00  WARN 94964 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-24T19:09:19.201+08:00  WARN 94964 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: dae14407-36f3-4b03-9e30-59afb4e0beba
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-11-24T19:09:19.216+08:00  INFO 94964 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-24T19:09:19.740+08:00  INFO 94964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2024-11-24T19:09:19.749+08:00  INFO 94964 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 5.141 seconds (process running for 5.498)
+2024-11-24T19:09:46.708+08:00  INFO 94964 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-24T19:09:46.710+08:00  INFO 94964 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-24T19:09:46.711+08:00  INFO 94964 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-11-24 19:24:25 INFO  [com.example.demo.DemoApplication] Starting DemoApplication using Java 17.0.13 with PID 46096 (C:\Users\m1950\Desktop\demo\target\classes started by m1950 in C:\Users\m1950\Desktop\demo)
+2024-11-24 19:24:25 DEBUG [com.example.demo.DemoApplication] Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-24 19:24:25 INFO  [com.example.demo.DemoApplication] No active profile set, falling back to 1 default profile: "default"
+2024-11-24 19:24:26 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-24 19:24:26 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 72 ms. Found 4 JPA repository interfaces.
+2024-11-24 19:24:27 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+2024-11-24 19:24:27 INFO  [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+2024-11-24 19:24:27 INFO  [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-24 19:24:27 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]] Initializing Spring embedded WebApplicationContext
+2024-11-24 19:24:27 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1520 ms
+2024-11-24 19:24:27 DEBUG [com.example.demo.config.JwtAuthFilter] Filter 'jwtAuthFilter' configured for use
+2024-11-24 19:24:27 INFO  [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-24 19:24:27 INFO  [org.hibernate.Version] HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-24 19:24:27 INFO  [org.hibernate.cache.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+2024-11-24 19:24:27 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-24 19:24:27 INFO  [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+2024-11-24 19:24:27 INFO  [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1214c98b
+2024-11-24 19:24:27 INFO  [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+2024-11-24 19:24:28 INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-24 19:24:28 DEBUG [org.hibernate.SQL] alter table comments modify column content TEXT not null
+2024-11-24 19:24:28 DEBUG [org.hibernate.SQL] alter table post modify column content TEXT not null
+2024-11-24 19:24:28 DEBUG [org.hibernate.SQL] alter table post modify column images JSON
+2024-11-24 19:24:28 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-24 19:24:29 INFO  [org.springframework.data.jpa.repository.query.QueryEnhancerFactory] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-24 19:24:29 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-24 19:24:29 WARN  [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: 58c2beb3-de69-42de-b431-9a343054fa97
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-11-24 19:24:29 INFO  [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-24 19:24:29 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] 17 mappings in 'requestMappingHandlerMapping'
+2024-11-24 19:24:29 DEBUG [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-11-24 19:24:29 DEBUG [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-24 19:24:29 DEBUG [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-24 19:24:30 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/api'
+2024-11-24 19:24:30 INFO  [com.example.demo.DemoApplication] Started DemoApplication in 4.983 seconds (process running for 5.324)
+2024-11-24 19:24:44 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-24 19:24:44 INFO  [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+2024-11-24 19:24:44 DEBUG [org.springframework.web.servlet.DispatcherServlet] Detected StandardServletMultipartResolver
+2024-11-24 19:24:44 DEBUG [org.springframework.web.servlet.DispatcherServlet] Detected AcceptHeaderLocaleResolver
+2024-11-24 19:24:44 DEBUG [org.springframework.web.servlet.DispatcherServlet] Detected FixedThemeResolver
+2024-11-24 19:24:44 DEBUG [org.springframework.web.servlet.DispatcherServlet] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7f5179be
+2024-11-24 19:24:44 DEBUG [org.springframework.web.servlet.DispatcherServlet] Detected org.springframework.web.servlet.support.SessionFlashMapManager@7e913ef1
+2024-11-24 19:24:44 DEBUG [org.springframework.web.servlet.DispatcherServlet] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-24 19:24:44 INFO  [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 3 ms
+2024-11-24 19:29:46 INFO  [com.example.demo.DemoApplication] Starting DemoApplication using Java 17.0.13 with PID 93704 (C:\Users\m1950\Desktop\demo\target\classes started by m1950 in C:\Users\m1950\Desktop\demo)
+2024-11-24 19:29:46 DEBUG [com.example.demo.DemoApplication] Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-24 19:29:46 INFO  [com.example.demo.DemoApplication] No active profile set, falling back to 1 default profile: "default"
+2024-11-24 19:29:48 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-24 19:29:48 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 62 ms. Found 4 JPA repository interfaces.
+2024-11-24 19:29:48 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+2024-11-24 19:29:48 INFO  [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+2024-11-24 19:29:48 INFO  [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-24 19:29:48 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]] Initializing Spring embedded WebApplicationContext
+2024-11-24 19:29:48 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1904 ms
+2024-11-24 19:29:48 DEBUG [com.example.demo.config.JwtAuthFilter] Filter 'jwtAuthFilter' configured for use
+2024-11-24 19:29:49 INFO  [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-24 19:29:49 INFO  [org.hibernate.Version] HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-24 19:29:49 INFO  [org.hibernate.cache.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+2024-11-24 19:29:49 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-24 19:29:49 INFO  [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+2024-11-24 19:29:49 INFO  [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c135f63
+2024-11-24 19:29:49 INFO  [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+2024-11-24 19:29:50 INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-24 19:29:50 DEBUG [org.hibernate.SQL] alter table comments modify column content TEXT not null
+2024-11-24 19:29:50 DEBUG [org.hibernate.SQL] alter table post modify column content TEXT not null
+2024-11-24 19:29:50 DEBUG [org.hibernate.SQL] alter table post modify column images JSON
+2024-11-24 19:29:50 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-24 19:29:51 INFO  [org.springframework.data.jpa.repository.query.QueryEnhancerFactory] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-24 19:29:51 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-24 19:29:51 WARN  [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: 7b9e2488-e1d1-419b-9cbd-e0dffdb5d9f8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-11-24 19:29:51 INFO  [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-24 19:29:52 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/api'
+2024-11-24 19:29:52 INFO  [com.example.demo.DemoApplication] Started DemoApplication in 6.01 seconds (process running for 6.458)
+2024-11-24 19:29:52 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-24 19:29:52 INFO  [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+2024-11-24 19:29:52 INFO  [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 1 ms
+2024-11-24 19:29:52 INFO  [com.example.demo.util.JwtUtil] [9f3ee9f9] 开始验证token
+2024-11-24 19:29:52 ERROR [com.example.demo.util.JwtUtil] [9f3ee9f9] Token验证失败: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2024-11-24 19:29:52 INFO  [com.example.demo.util.JwtUtil] [ef6c7483] 开始验证token
+2024-11-24 19:29:52 ERROR [com.example.demo.util.JwtUtil] [ef6c7483] Token验证失败: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2024-11-24 19:30:13 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:30:13 INFO  [com.example.demo.util.JwtUtil] [f28a8b5b] 开始生成token, studentId: 1234567890
+2024-11-24 19:30:13 INFO  [com.example.demo.util.JwtUtil] [f28a8b5b] Token生成成功, 过期时间: Mon Nov 25 19:30:13 CST 2024
+2024-11-24 19:30:15 INFO  [com.example.demo.util.JwtUtil] [a2380a59] 开始验证token
+2024-11-24 19:30:15 INFO  [com.example.demo.util.JwtUtil] [a2380a59] Token验证结果: true, 过期时间: Mon Nov 25 19:30:13 CST 2024
+2024-11-24 19:30:15 INFO  [com.example.demo.util.JwtUtil] [03e52418] 开始解析token
+2024-11-24 19:30:15 INFO  [com.example.demo.util.JwtUtil] [03e52418] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:30:13 CST 2024
+2024-11-24 19:30:15 INFO  [com.example.demo.util.JwtUtil] [6daca355] 开始解析token
+2024-11-24 19:30:15 INFO  [com.example.demo.util.JwtUtil] [6daca355] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:30:13 CST 2024
+2024-11-24 19:30:15 DEBUG [org.hibernate.SQL] select p1_0.id,p1_0.comment_count,p1_0.content,p1_0.create_time,p1_0.images,p1_0.like_count,p1_0.student_id,p1_0.type from post p1_0 where (? is null or p1_0.type=?) order by p1_0.create_time desc limit ?
+2024-11-24 19:30:15 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:30:15 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 19:30:15 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:30:15 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 19:30:15 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:30:15 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 19:30:24 INFO  [com.example.demo.util.JwtUtil] [83e3f653] 开始验证token
+2024-11-24 19:30:24 INFO  [com.example.demo.util.JwtUtil] [83e3f653] Token验证结果: true, 过期时间: Mon Nov 25 19:30:13 CST 2024
+2024-11-24 19:30:24 INFO  [com.example.demo.util.JwtUtil] [d6787ed2] 开始解析token
+2024-11-24 19:30:24 INFO  [com.example.demo.util.JwtUtil] [d6787ed2] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:30:13 CST 2024
+2024-11-24 19:40:25 INFO  [com.example.demo.DemoApplication] Starting DemoApplication using Java 17.0.13 with PID 97936 (C:\Users\m1950\Desktop\demo\target\classes started by m1950 in C:\Users\m1950\Desktop\demo)
+2024-11-24 19:40:25 DEBUG [com.example.demo.DemoApplication] Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-24 19:40:25 INFO  [com.example.demo.DemoApplication] No active profile set, falling back to 1 default profile: "default"
+2024-11-24 19:40:26 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-24 19:40:26 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 55 ms. Found 4 JPA repository interfaces.
+2024-11-24 19:40:27 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+2024-11-24 19:40:27 INFO  [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+2024-11-24 19:40:27 INFO  [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-24 19:40:27 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]] Initializing Spring embedded WebApplicationContext
+2024-11-24 19:40:27 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1399 ms
+2024-11-24 19:40:27 DEBUG [com.example.demo.config.JwtAuthFilter] Filter 'jwtAuthFilter' configured for use
+2024-11-24 19:40:27 INFO  [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-24 19:40:27 INFO  [org.hibernate.Version] HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-24 19:40:27 INFO  [org.hibernate.cache.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+2024-11-24 19:40:27 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-24 19:40:27 INFO  [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+2024-11-24 19:40:28 INFO  [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f3361e9
+2024-11-24 19:40:28 INFO  [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+2024-11-24 19:40:28 INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-24 19:40:28 DEBUG [org.hibernate.SQL] alter table comments modify column content TEXT not null
+2024-11-24 19:40:28 DEBUG [org.hibernate.SQL] alter table post modify column content TEXT not null
+2024-11-24 19:40:28 DEBUG [org.hibernate.SQL] alter table post modify column images JSON
+2024-11-24 19:40:28 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-24 19:40:29 INFO  [org.springframework.data.jpa.repository.query.QueryEnhancerFactory] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-24 19:40:29 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-24 19:40:29 WARN  [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: dfea1698-6c3b-47e0-a857-bfdea30644ee
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-11-24 19:40:29 INFO  [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-24 19:40:30 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/api'
+2024-11-24 19:40:30 INFO  [com.example.demo.DemoApplication] Started DemoApplication in 4.937 seconds (process running for 5.277)
+2024-11-24 19:40:43 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-24 19:40:43 INFO  [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+2024-11-24 19:40:43 INFO  [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 2 ms
+2024-11-24 19:40:43 INFO  [com.example.demo.util.JwtUtil] [a746a93c] 开始验证token
+2024-11-24 19:40:43 INFO  [com.example.demo.util.JwtUtil] [a61d853f] 开始验证token
+2024-11-24 19:40:43 ERROR [com.example.demo.util.JwtUtil] [a746a93c] Token验证失败: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2024-11-24 19:40:43 ERROR [com.example.demo.util.JwtUtil] [a61d853f] Token验证失败: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2024-11-24 19:41:00 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:41:00 INFO  [com.example.demo.util.JwtUtil] [407924f8] 开始生成token, studentId: 1234567890
+2024-11-24 19:41:00 INFO  [com.example.demo.util.JwtUtil] [407924f8] Token生成成功, 过期时间: Mon Nov 25 19:41:00 CST 2024
+2024-11-24 19:41:02 INFO  [com.example.demo.util.JwtUtil] [2a009b23] 开始验证token
+2024-11-24 19:41:02 INFO  [com.example.demo.util.JwtUtil] [2a009b23] Token验证结果: true, 过期时间: Mon Nov 25 19:41:00 CST 2024
+2024-11-24 19:41:02 INFO  [com.example.demo.util.JwtUtil] [a2c39fdc] 开始解析token
+2024-11-24 19:41:02 INFO  [com.example.demo.util.JwtUtil] [a2c39fdc] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:41:00 CST 2024
+2024-11-24 19:41:02 INFO  [com.example.demo.util.JwtUtil] [b7a7c595] 开始解析token
+2024-11-24 19:41:02 INFO  [com.example.demo.util.JwtUtil] [b7a7c595] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:41:00 CST 2024
+2024-11-24 19:41:02 DEBUG [org.hibernate.SQL] select p1_0.id,p1_0.comment_count,p1_0.content,p1_0.create_time,p1_0.images,p1_0.like_count,p1_0.student_id,p1_0.type from post p1_0 where (? is null or p1_0.type=?) order by p1_0.create_time desc limit ?
+2024-11-24 19:41:02 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:41:02 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 19:41:02 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:41:02 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 19:41:02 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:41:02 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 19:41:10 INFO  [com.example.demo.util.JwtUtil] [37134538] 开始验证token
+2024-11-24 19:41:10 INFO  [com.example.demo.util.JwtUtil] [37134538] Token验证结果: true, 过期时间: Mon Nov 25 19:41:00 CST 2024
+2024-11-24 19:41:10 INFO  [com.example.demo.util.JwtUtil] [3ed800f7] 开始解析token
+2024-11-24 19:41:10 INFO  [com.example.demo.util.JwtUtil] [3ed800f7] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:41:00 CST 2024
+2024-11-24 19:44:48 INFO  [com.example.demo.util.JwtUtil] [afb4f6f5] 开始验证token
+2024-11-24 19:44:48 INFO  [com.example.demo.util.JwtUtil] [afb4f6f5] Token验证结果: true, 过期时间: Mon Nov 25 19:41:00 CST 2024
+2024-11-24 19:44:48 INFO  [com.example.demo.util.JwtUtil] [5e7a28a3] 开始解析token
+2024-11-24 19:44:48 INFO  [com.example.demo.util.JwtUtil] [5e7a28a3] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:41:00 CST 2024
+2024-11-24 19:44:48 INFO  [com.example.demo.util.JwtUtil] [24b4b76a] 开始验证token
+2024-11-24 19:44:48 INFO  [com.example.demo.util.JwtUtil] [24b4b76a] Token验证结果: true, 过期时间: Mon Nov 25 19:41:00 CST 2024
+2024-11-24 19:44:48 INFO  [com.example.demo.util.JwtUtil] [68005cce] 开始解析token
+2024-11-24 19:44:48 INFO  [com.example.demo.util.JwtUtil] [68005cce] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:41:00 CST 2024
+2024-11-24 19:44:48 INFO  [com.example.demo.util.JwtUtil] [302cf675] 开始解析token
+2024-11-24 19:44:48 INFO  [com.example.demo.util.JwtUtil] [302cf675] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:41:00 CST 2024
+2024-11-24 19:44:48 DEBUG [org.hibernate.SQL] select p1_0.id,p1_0.comment_count,p1_0.content,p1_0.create_time,p1_0.images,p1_0.like_count,p1_0.student_id,p1_0.type from post p1_0 where (? is null or p1_0.type=?) order by p1_0.create_time desc limit ?
+2024-11-24 19:44:48 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:44:48 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 19:44:48 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:44:48 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 19:44:48 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:44:48 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 19:45:03 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:45:03 INFO  [com.example.demo.util.JwtUtil] [f4f9c765] 开始生成token, studentId: 1234567890
+2024-11-24 19:45:03 INFO  [com.example.demo.util.JwtUtil] [f4f9c765] Token生成成功, 过期时间: Mon Nov 25 19:45:03 CST 2024
+2024-11-24 19:45:05 INFO  [com.example.demo.util.JwtUtil] [a412553a] 开始验证token
+2024-11-24 19:45:05 INFO  [com.example.demo.util.JwtUtil] [a412553a] Token验证结果: true, 过期时间: Mon Nov 25 19:45:03 CST 2024
+2024-11-24 19:45:05 INFO  [com.example.demo.util.JwtUtil] [51a7b614] 开始解析token
+2024-11-24 19:45:05 INFO  [com.example.demo.util.JwtUtil] [51a7b614] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:45:03 CST 2024
+2024-11-24 19:45:05 INFO  [com.example.demo.util.JwtUtil] [48b11296] 开始解析token
+2024-11-24 19:45:05 INFO  [com.example.demo.util.JwtUtil] [48b11296] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:45:03 CST 2024
+2024-11-24 19:45:05 DEBUG [org.hibernate.SQL] select p1_0.id,p1_0.comment_count,p1_0.content,p1_0.create_time,p1_0.images,p1_0.like_count,p1_0.student_id,p1_0.type from post p1_0 where (? is null or p1_0.type=?) order by p1_0.create_time desc limit ?
+2024-11-24 19:45:05 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:45:05 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 19:45:05 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:45:05 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 19:45:05 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:45:05 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 19:45:11 INFO  [com.example.demo.util.JwtUtil] [85970316] 开始验证token
+2024-11-24 19:45:11 INFO  [com.example.demo.util.JwtUtil] [85970316] Token验证结果: true, 过期时间: Mon Nov 25 19:45:03 CST 2024
+2024-11-24 19:45:11 INFO  [com.example.demo.util.JwtUtil] [41c848e3] 开始解析token
+2024-11-24 19:45:11 INFO  [com.example.demo.util.JwtUtil] [41c848e3] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:45:03 CST 2024
+2024-11-24 19:48:39 INFO  [com.example.demo.util.JwtUtil] [6b9ea1ae] 开始验证token
+2024-11-24 19:48:39 INFO  [com.example.demo.util.JwtUtil] [6b9ea1ae] Token验证结果: true, 过期时间: Mon Nov 25 19:45:03 CST 2024
+2024-11-24 19:48:39 INFO  [com.example.demo.util.JwtUtil] [be799125] 开始解析token
+2024-11-24 19:48:39 INFO  [com.example.demo.util.JwtUtil] [be799125] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:45:03 CST 2024
+2024-11-24 19:49:09 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:49:09 INFO  [com.example.demo.util.JwtUtil] [0d3cf4d2] 开始生成token, studentId: 1234567890
+2024-11-24 19:49:09 INFO  [com.example.demo.util.JwtUtil] [0d3cf4d2] Token生成成功, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 19:49:10 INFO  [com.example.demo.util.JwtUtil] [63a671a4] 开始验证token
+2024-11-24 19:49:10 INFO  [com.example.demo.util.JwtUtil] [63a671a4] Token验证结果: true, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 19:49:10 INFO  [com.example.demo.util.JwtUtil] [4d6c86e0] 开始解析token
+2024-11-24 19:49:10 INFO  [com.example.demo.util.JwtUtil] [4d6c86e0] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 19:49:10 INFO  [com.example.demo.util.JwtUtil] [ae6000a6] 开始解析token
+2024-11-24 19:49:10 INFO  [com.example.demo.util.JwtUtil] [ae6000a6] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 19:49:10 DEBUG [org.hibernate.SQL] select p1_0.id,p1_0.comment_count,p1_0.content,p1_0.create_time,p1_0.images,p1_0.like_count,p1_0.student_id,p1_0.type from post p1_0 where (? is null or p1_0.type=?) order by p1_0.create_time desc limit ?
+2024-11-24 19:49:10 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:49:10 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 19:49:10 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:49:10 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 19:49:10 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:49:10 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 19:49:14 INFO  [com.example.demo.util.JwtUtil] [13866d70] 开始验证token
+2024-11-24 19:49:14 INFO  [com.example.demo.util.JwtUtil] [13866d70] Token验证结果: true, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 19:49:14 INFO  [com.example.demo.util.JwtUtil] [f374821b] 开始解析token
+2024-11-24 19:49:14 INFO  [com.example.demo.util.JwtUtil] [f374821b] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 19:49:14 INFO  [com.example.demo.controller.PostController] [8623c0c1] >>> 开始处理获取用户帖子请求 <<<
+2024-11-24 19:49:14 INFO  [com.example.demo.controller.PostController] [8623c0c1] 请求参数: type=market, page=1, pageSize=10
+2024-11-24 19:49:14 INFO  [com.example.demo.controller.PostController] [8623c0c1] Token: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWF0IjoxNzMyNDQ4OTQ5LCJleHAiOjE3MzI1MzUzNDl9.YXKj2gVcBl9DVJ0dRI3NwKqQ0JcnFPluqzrxibMnXKo
+2024-11-24 19:49:14 DEBUG [com.example.demo.controller.PostController] [8623c0c1] 处理后的token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWF0IjoxNzMyNDQ4OTQ5LCJleHAiOjE3MzI1MzUzNDl9.YXKj2gVcBl9DVJ0dRI3NwKqQ0JcnFPluqzrxibMnXKo
+2024-11-24 19:49:14 INFO  [com.example.demo.util.JwtUtil] [69298cd3] 开始解析token
+2024-11-24 19:49:14 INFO  [com.example.demo.util.JwtUtil] [69298cd3] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 19:49:14 INFO  [com.example.demo.controller.PostController] [8623c0c1] 成功解析学生ID: 1234567890
+2024-11-24 19:49:14 DEBUG [com.example.demo.controller.PostController] [8623c0c1] 开始查询数据库...
+2024-11-24 19:49:14 INFO  [com.example.demo.service.PostService] [c854e795] 开始查询用户帖子, studentId=1234567890, type=market, page=1
+2024-11-24 19:49:14 DEBUG [org.hibernate.SQL] select p1_0.id,p1_0.comment_count,p1_0.content,p1_0.create_time,p1_0.images,p1_0.like_count,p1_0.student_id,p1_0.type from post p1_0 where p1_0.student_id=? and p1_0.type=? order by p1_0.create_time desc limit ?
+2024-11-24 19:49:14 INFO  [com.example.demo.service.PostService] [c854e795] 查询到 1 条记录
+2024-11-24 19:49:14 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:49:14 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 19:49:14 DEBUG [com.example.demo.controller.PostController] [8623c0c1] 数据库查询完成: {total=1, list=[{images=[], createTime=1732409761074, isLiked=true, likeCount=1, id=3, type=market, user={name=lck, id=1234567890}, content=5whyat, commentCount=0}]}
+2024-11-24 19:49:14 INFO  [com.example.demo.controller.PostController] [8623c0c1] >>> 请求处理完成 <<<
+2024-11-24 19:49:15 INFO  [com.example.demo.util.JwtUtil] [151169f1] 开始验证token
+2024-11-24 19:49:15 INFO  [com.example.demo.util.JwtUtil] [151169f1] Token验证结果: true, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 19:49:15 INFO  [com.example.demo.util.JwtUtil] [553d7f39] 开始解析token
+2024-11-24 19:49:15 INFO  [com.example.demo.util.JwtUtil] [553d7f39] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 19:49:15 INFO  [com.example.demo.controller.PostController] [f907043d] >>> 开始处理获取用户帖子请求 <<<
+2024-11-24 19:49:15 INFO  [com.example.demo.controller.PostController] [f907043d] 请求参数: type=love, page=1, pageSize=10
+2024-11-24 19:49:15 INFO  [com.example.demo.controller.PostController] [f907043d] Token: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWF0IjoxNzMyNDQ4OTQ5LCJleHAiOjE3MzI1MzUzNDl9.YXKj2gVcBl9DVJ0dRI3NwKqQ0JcnFPluqzrxibMnXKo
+2024-11-24 19:49:15 DEBUG [com.example.demo.controller.PostController] [f907043d] 处理后的token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWF0IjoxNzMyNDQ4OTQ5LCJleHAiOjE3MzI1MzUzNDl9.YXKj2gVcBl9DVJ0dRI3NwKqQ0JcnFPluqzrxibMnXKo
+2024-11-24 19:49:15 INFO  [com.example.demo.util.JwtUtil] [e6403f0f] 开始解析token
+2024-11-24 19:49:15 INFO  [com.example.demo.util.JwtUtil] [e6403f0f] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 19:49:15 INFO  [com.example.demo.controller.PostController] [f907043d] 成功解析学生ID: 1234567890
+2024-11-24 19:49:15 DEBUG [com.example.demo.controller.PostController] [f907043d] 开始查询数据库...
+2024-11-24 19:49:15 INFO  [com.example.demo.service.PostService] [8e599d97] 开始查询用户帖子, studentId=1234567890, type=love, page=1
+2024-11-24 19:49:15 DEBUG [org.hibernate.SQL] select p1_0.id,p1_0.comment_count,p1_0.content,p1_0.create_time,p1_0.images,p1_0.like_count,p1_0.student_id,p1_0.type from post p1_0 where p1_0.student_id=? and p1_0.type=? order by p1_0.create_time desc limit ?
+2024-11-24 19:49:15 INFO  [com.example.demo.service.PostService] [8e599d97] 查询到 3 条记录
+2024-11-24 19:49:15 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:49:15 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 19:49:15 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:49:15 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 19:49:15 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:49:15 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 19:49:15 DEBUG [com.example.demo.controller.PostController] [f907043d] 数据库查询完成: {total=3, list=[{images=[], createTime=1732433340362, isLiked=false, likeCount=0, id=5, type=love, user={name=lck, id=1234567890}, content=ewa, commentCount=0}, {images=[], createTime=1732409701927, isLiked=false, likeCount=0, id=2, type=love, user={name=lck, id=1234567890}, content=srbr, commentCount=0}, {images=[], createTime=1732359171586, isLiked=true, likeCount=1, id=1, type=love, user={name=lck, id=1234567890}, content=12345, commentCount=2}]}
+2024-11-24 19:49:15 INFO  [com.example.demo.controller.PostController] [f907043d] >>> 请求处理完成 <<<
+2024-11-24 19:49:20 INFO  [com.example.demo.util.JwtUtil] [b56de915] 开始验证token
+2024-11-24 19:49:20 INFO  [com.example.demo.util.JwtUtil] [b56de915] Token验证结果: true, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 19:49:20 INFO  [com.example.demo.util.JwtUtil] [ddcd86e7] 开始解析token
+2024-11-24 19:49:20 INFO  [com.example.demo.util.JwtUtil] [ddcd86e7] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 19:49:20 INFO  [com.example.demo.util.JwtUtil] [1480aceb] 开始解析token
+2024-11-24 19:49:20 INFO  [com.example.demo.util.JwtUtil] [b422ef34] 开始验证token
+2024-11-24 19:49:20 INFO  [com.example.demo.util.JwtUtil] [1480aceb] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 19:49:20 INFO  [com.example.demo.util.JwtUtil] [b422ef34] Token验证结果: true, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 19:49:20 INFO  [com.example.demo.util.JwtUtil] [dbf96d77] 开始解析token
+2024-11-24 19:49:20 INFO  [com.example.demo.util.JwtUtil] [dbf96d77] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 19:49:20 DEBUG [org.hibernate.SQL] select c1_0.id,c1_0.content,c1_0.create_time,c1_0.post_id,c1_0.reply_to_id,c1_0.student_id from comments c1_0 where c1_0.post_id=? order by c1_0.create_time desc
+2024-11-24 19:49:20 DEBUG [org.hibernate.SQL] select p1_0.id,p1_0.comment_count,p1_0.content,p1_0.create_time,p1_0.images,p1_0.like_count,p1_0.student_id,p1_0.type from post p1_0 where p1_0.id=?
+2024-11-24 19:49:20 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:49:20 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 19:49:23 INFO  [com.example.demo.util.JwtUtil] [547d2b72] 开始验证token
+2024-11-24 19:49:23 INFO  [com.example.demo.util.JwtUtil] [547d2b72] Token验证结果: true, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 19:49:23 INFO  [com.example.demo.util.JwtUtil] [b4b9cc33] 开始解析token
+2024-11-24 19:49:23 INFO  [com.example.demo.util.JwtUtil] [6c2d80d8] 开始验证token
+2024-11-24 19:49:23 INFO  [com.example.demo.util.JwtUtil] [b4b9cc33] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 19:49:23 INFO  [com.example.demo.util.JwtUtil] [24c5c586] 开始解析token
+2024-11-24 19:49:23 INFO  [com.example.demo.util.JwtUtil] [6c2d80d8] Token验证结果: true, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 19:49:23 INFO  [com.example.demo.util.JwtUtil] [20a99fe4] 开始解析token
+2024-11-24 19:49:23 INFO  [com.example.demo.util.JwtUtil] [20a99fe4] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 19:49:23 DEBUG [org.hibernate.SQL] select c1_0.id,c1_0.content,c1_0.create_time,c1_0.post_id,c1_0.reply_to_id,c1_0.student_id from comments c1_0 where c1_0.post_id=? order by c1_0.create_time desc
+2024-11-24 19:49:23 INFO  [com.example.demo.util.JwtUtil] [24c5c586] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 19:49:23 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:49:23 DEBUG [org.hibernate.SQL] select p1_0.id,p1_0.comment_count,p1_0.content,p1_0.create_time,p1_0.images,p1_0.like_count,p1_0.student_id,p1_0.type from post p1_0 where p1_0.id=?
+2024-11-24 19:49:23 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:49:23 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:49:23 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 19:49:28 INFO  [com.example.demo.util.JwtUtil] [24e00ee8] 开始验证token
+2024-11-24 19:49:28 INFO  [com.example.demo.util.JwtUtil] [24e00ee8] Token验证结果: true, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 19:49:28 INFO  [com.example.demo.util.JwtUtil] [55b4f351] 开始解析token
+2024-11-24 19:49:28 INFO  [com.example.demo.util.JwtUtil] [55b4f351] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 19:49:28 INFO  [com.example.demo.util.JwtUtil] [6ab1e4e7] 开始解析token
+2024-11-24 19:49:28 INFO  [com.example.demo.util.JwtUtil] [6ab1e4e7] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 19:49:28 DEBUG [org.hibernate.SQL] select p1_0.id,p1_0.comment_count,p1_0.content,p1_0.create_time,p1_0.images,p1_0.like_count,p1_0.student_id,p1_0.type from post p1_0 where (? is null or p1_0.type=?) order by p1_0.create_time desc limit ?
+2024-11-24 19:49:28 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:49:28 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 19:49:30 INFO  [com.example.demo.util.JwtUtil] [d00d774c] 开始验证token
+2024-11-24 19:49:30 INFO  [com.example.demo.util.JwtUtil] [d00d774c] Token验证结果: true, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 19:49:30 INFO  [com.example.demo.util.JwtUtil] [c5d340fd] 开始解析token
+2024-11-24 19:49:30 INFO  [com.example.demo.util.JwtUtil] [c5d340fd] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 19:49:30 INFO  [com.example.demo.util.JwtUtil] [4ec15e7d] 开始解析token
+2024-11-24 19:49:30 INFO  [com.example.demo.util.JwtUtil] [4ec15e7d] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 19:49:30 DEBUG [org.hibernate.SQL] select p1_0.id,p1_0.comment_count,p1_0.content,p1_0.create_time,p1_0.images,p1_0.like_count,p1_0.student_id,p1_0.type from post p1_0 where (? is null or p1_0.type=?) order by p1_0.create_time desc limit ?
+2024-11-24 19:49:30 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 19:49:30 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 20:02:26 INFO  [com.example.demo.util.JwtUtil] [31c30b9a] 开始验证token
+2024-11-24 20:02:26 INFO  [com.example.demo.util.JwtUtil] [31c30b9a] Token验证结果: true, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 20:02:26 INFO  [com.example.demo.util.JwtUtil] [0c868486] 开始解析token
+2024-11-24 20:02:26 INFO  [com.example.demo.util.JwtUtil] [0c868486] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 20:02:26 INFO  [com.example.demo.util.JwtUtil] [e4560ffd] 开始解析token
+2024-11-24 20:02:26 INFO  [com.example.demo.util.JwtUtil] [e4560ffd] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 20:02:26 DEBUG [org.hibernate.SQL] select p1_0.id,p1_0.comment_count,p1_0.content,p1_0.create_time,p1_0.images,p1_0.like_count,p1_0.student_id,p1_0.type from post p1_0 where (? is null or p1_0.type=?) order by p1_0.like_count desc,p1_0.create_time desc limit ?
+2024-11-24 20:02:26 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 20:02:26 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 20:02:26 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 20:02:26 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 20:02:26 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 20:02:26 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 20:02:27 INFO  [com.example.demo.util.JwtUtil] [9362c2a5] 开始验证token
+2024-11-24 20:02:27 INFO  [com.example.demo.util.JwtUtil] [9362c2a5] Token验证结果: true, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 20:02:27 INFO  [com.example.demo.util.JwtUtil] [adba49bd] 开始解析token
+2024-11-24 20:02:27 INFO  [com.example.demo.util.JwtUtil] [adba49bd] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 20:02:27 INFO  [com.example.demo.util.JwtUtil] [1edd03ff] 开始解析token
+2024-11-24 20:02:27 INFO  [com.example.demo.util.JwtUtil] [1edd03ff] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 20:02:27 DEBUG [org.hibernate.SQL] select p1_0.id,p1_0.comment_count,p1_0.content,p1_0.create_time,p1_0.images,p1_0.like_count,p1_0.student_id,p1_0.type from post p1_0 where (? is null or p1_0.type=?) order by p1_0.create_time desc limit ?
+2024-11-24 20:02:27 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 20:02:27 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 20:02:27 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 20:02:27 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 20:02:27 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 20:02:27 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 20:02:33 INFO  [com.example.demo.util.JwtUtil] [5ab26c42] 开始验证token
+2024-11-24 20:02:33 INFO  [com.example.demo.util.JwtUtil] [5ab26c42] Token验证结果: true, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 20:02:33 INFO  [com.example.demo.util.JwtUtil] [c9cd59d4] 开始解析token
+2024-11-24 20:02:33 INFO  [com.example.demo.util.JwtUtil] [c9cd59d4] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 20:02:33 INFO  [com.example.demo.controller.PostController] [a0c7432d] >>> 开始处理获取用户帖子请求 <<<
+2024-11-24 20:02:33 INFO  [com.example.demo.controller.PostController] [a0c7432d] 请求参数: type=love, page=1, pageSize=10
+2024-11-24 20:02:33 INFO  [com.example.demo.controller.PostController] [a0c7432d] Token: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWF0IjoxNzMyNDQ4OTQ5LCJleHAiOjE3MzI1MzUzNDl9.YXKj2gVcBl9DVJ0dRI3NwKqQ0JcnFPluqzrxibMnXKo
+2024-11-24 20:02:33 DEBUG [com.example.demo.controller.PostController] [a0c7432d] 处理后的token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWF0IjoxNzMyNDQ4OTQ5LCJleHAiOjE3MzI1MzUzNDl9.YXKj2gVcBl9DVJ0dRI3NwKqQ0JcnFPluqzrxibMnXKo
+2024-11-24 20:02:33 INFO  [com.example.demo.util.JwtUtil] [933f1a4a] 开始解析token
+2024-11-24 20:02:33 INFO  [com.example.demo.util.JwtUtil] [933f1a4a] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 20:02:33 INFO  [com.example.demo.controller.PostController] [a0c7432d] 成功解析学生ID: 1234567890
+2024-11-24 20:02:33 DEBUG [com.example.demo.controller.PostController] [a0c7432d] 开始查询数据库...
+2024-11-24 20:02:33 INFO  [com.example.demo.service.PostService] [e9548e9e] 开始查询用户帖子, studentId=1234567890, type=love, page=1
+2024-11-24 20:02:33 DEBUG [org.hibernate.SQL] select p1_0.id,p1_0.comment_count,p1_0.content,p1_0.create_time,p1_0.images,p1_0.like_count,p1_0.student_id,p1_0.type from post p1_0 where p1_0.student_id=? and p1_0.type=? order by p1_0.create_time desc limit ?
+2024-11-24 20:02:33 INFO  [com.example.demo.service.PostService] [e9548e9e] 查询到 3 条记录
+2024-11-24 20:02:33 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 20:02:33 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 20:02:33 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 20:02:33 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 20:02:33 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 20:02:33 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 20:02:33 DEBUG [com.example.demo.controller.PostController] [a0c7432d] 数据库查询完成: {total=3, list=[{images=[], createTime=1732433340362, isLiked=false, likeCount=0, id=5, type=love, user={name=lck, id=1234567890}, content=ewa, commentCount=0}, {images=[], createTime=1732409701927, isLiked=false, likeCount=0, id=2, type=love, user={name=lck, id=1234567890}, content=srbr, commentCount=0}, {images=[], createTime=1732359171586, isLiked=true, likeCount=1, id=1, type=love, user={name=lck, id=1234567890}, content=12345, commentCount=2}]}
+2024-11-24 20:02:33 INFO  [com.example.demo.controller.PostController] [a0c7432d] >>> 请求处理完成 <<<
+2024-11-24 20:02:35 INFO  [com.example.demo.util.JwtUtil] [9e25769c] 开始验证token
+2024-11-24 20:02:35 INFO  [com.example.demo.util.JwtUtil] [9e25769c] Token验证结果: true, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 20:02:35 INFO  [com.example.demo.util.JwtUtil] [a102f3ff] 开始解析token
+2024-11-24 20:02:35 INFO  [com.example.demo.util.JwtUtil] [a102f3ff] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 20:02:35 INFO  [com.example.demo.controller.PostController] [cd4ad3f1] >>> 开始处理获取用户帖子请求 <<<
+2024-11-24 20:02:35 INFO  [com.example.demo.controller.PostController] [cd4ad3f1] 请求参数: type=market, page=1, pageSize=10
+2024-11-24 20:02:35 INFO  [com.example.demo.controller.PostController] [cd4ad3f1] Token: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWF0IjoxNzMyNDQ4OTQ5LCJleHAiOjE3MzI1MzUzNDl9.YXKj2gVcBl9DVJ0dRI3NwKqQ0JcnFPluqzrxibMnXKo
+2024-11-24 20:02:35 DEBUG [com.example.demo.controller.PostController] [cd4ad3f1] 处理后的token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWF0IjoxNzMyNDQ4OTQ5LCJleHAiOjE3MzI1MzUzNDl9.YXKj2gVcBl9DVJ0dRI3NwKqQ0JcnFPluqzrxibMnXKo
+2024-11-24 20:02:35 INFO  [com.example.demo.util.JwtUtil] [67b88ecf] 开始解析token
+2024-11-24 20:02:35 INFO  [com.example.demo.util.JwtUtil] [67b88ecf] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 20:02:35 INFO  [com.example.demo.controller.PostController] [cd4ad3f1] 成功解析学生ID: 1234567890
+2024-11-24 20:02:35 DEBUG [com.example.demo.controller.PostController] [cd4ad3f1] 开始查询数据库...
+2024-11-24 20:02:35 INFO  [com.example.demo.service.PostService] [e6ca3d03] 开始查询用户帖子, studentId=1234567890, type=market, page=1
+2024-11-24 20:02:35 DEBUG [org.hibernate.SQL] select p1_0.id,p1_0.comment_count,p1_0.content,p1_0.create_time,p1_0.images,p1_0.like_count,p1_0.student_id,p1_0.type from post p1_0 where p1_0.student_id=? and p1_0.type=? order by p1_0.create_time desc limit ?
+2024-11-24 20:02:35 INFO  [com.example.demo.service.PostService] [e6ca3d03] 查询到 1 条记录
+2024-11-24 20:02:35 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 20:02:35 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 20:02:35 DEBUG [com.example.demo.controller.PostController] [cd4ad3f1] 数据库查询完成: {total=1, list=[{images=[], createTime=1732409761074, isLiked=true, likeCount=1, id=3, type=market, user={name=lck, id=1234567890}, content=5whyat, commentCount=0}]}
+2024-11-24 20:02:35 INFO  [com.example.demo.controller.PostController] [cd4ad3f1] >>> 请求处理完成 <<<
+2024-11-24 20:02:35 INFO  [com.example.demo.util.JwtUtil] [f0c2d78e] 开始验证token
+2024-11-24 20:02:35 INFO  [com.example.demo.util.JwtUtil] [f0c2d78e] Token验证结果: true, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 20:02:36 INFO  [com.example.demo.util.JwtUtil] [9005b13a] 开始解析token
+2024-11-24 20:02:36 INFO  [com.example.demo.util.JwtUtil] [9005b13a] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 20:02:36 INFO  [com.example.demo.controller.PostController] [5851363a] >>> 开始处理获取用户帖子请求 <<<
+2024-11-24 20:02:36 INFO  [com.example.demo.controller.PostController] [5851363a] 请求参数: type=job, page=1, pageSize=10
+2024-11-24 20:02:36 INFO  [com.example.demo.controller.PostController] [5851363a] Token: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWF0IjoxNzMyNDQ4OTQ5LCJleHAiOjE3MzI1MzUzNDl9.YXKj2gVcBl9DVJ0dRI3NwKqQ0JcnFPluqzrxibMnXKo
+2024-11-24 20:02:36 DEBUG [com.example.demo.controller.PostController] [5851363a] 处理后的token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWF0IjoxNzMyNDQ4OTQ5LCJleHAiOjE3MzI1MzUzNDl9.YXKj2gVcBl9DVJ0dRI3NwKqQ0JcnFPluqzrxibMnXKo
+2024-11-24 20:02:36 INFO  [com.example.demo.util.JwtUtil] [5ba6e32a] 开始解析token
+2024-11-24 20:02:36 INFO  [com.example.demo.util.JwtUtil] [5ba6e32a] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 20:02:36 INFO  [com.example.demo.controller.PostController] [5851363a] 成功解析学生ID: 1234567890
+2024-11-24 20:02:36 DEBUG [com.example.demo.controller.PostController] [5851363a] 开始查询数据库...
+2024-11-24 20:02:36 INFO  [com.example.demo.service.PostService] [2d1c71dc] 开始查询用户帖子, studentId=1234567890, type=job, page=1
+2024-11-24 20:02:36 DEBUG [org.hibernate.SQL] select p1_0.id,p1_0.comment_count,p1_0.content,p1_0.create_time,p1_0.images,p1_0.like_count,p1_0.student_id,p1_0.type from post p1_0 where p1_0.student_id=? and p1_0.type=? order by p1_0.create_time desc limit ?
+2024-11-24 20:02:36 INFO  [com.example.demo.service.PostService] [2d1c71dc] 查询到 1 条记录
+2024-11-24 20:02:36 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 20:02:36 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 20:02:36 DEBUG [com.example.demo.controller.PostController] [5851363a] 数据库查询完成: {total=1, list=[{images=[], createTime=1732409780016, isLiked=false, likeCount=0, id=4, type=job, user={name=lck, id=1234567890}, content=srb, commentCount=0}]}
+2024-11-24 20:02:36 INFO  [com.example.demo.controller.PostController] [5851363a] >>> 请求处理完成 <<<
+2024-11-24 20:02:37 INFO  [com.example.demo.util.JwtUtil] [6b04ef7e] 开始验证token
+2024-11-24 20:02:37 INFO  [com.example.demo.util.JwtUtil] [6b04ef7e] Token验证结果: true, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 20:02:37 INFO  [com.example.demo.util.JwtUtil] [65a3fe32] 开始解析token
+2024-11-24 20:02:37 INFO  [com.example.demo.util.JwtUtil] [65a3fe32] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 20:02:37 INFO  [com.example.demo.controller.PostController] [99435cb5] >>> 开始处理获取用户帖子请求 <<<
+2024-11-24 20:02:37 INFO  [com.example.demo.controller.PostController] [99435cb5] 请求参数: type=love, page=1, pageSize=10
+2024-11-24 20:02:37 INFO  [com.example.demo.controller.PostController] [99435cb5] Token: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWF0IjoxNzMyNDQ4OTQ5LCJleHAiOjE3MzI1MzUzNDl9.YXKj2gVcBl9DVJ0dRI3NwKqQ0JcnFPluqzrxibMnXKo
+2024-11-24 20:02:37 DEBUG [com.example.demo.controller.PostController] [99435cb5] 处理后的token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWF0IjoxNzMyNDQ4OTQ5LCJleHAiOjE3MzI1MzUzNDl9.YXKj2gVcBl9DVJ0dRI3NwKqQ0JcnFPluqzrxibMnXKo
+2024-11-24 20:02:37 INFO  [com.example.demo.util.JwtUtil] [1f3f7633] 开始解析token
+2024-11-24 20:02:37 INFO  [com.example.demo.util.JwtUtil] [1f3f7633] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 20:02:37 INFO  [com.example.demo.controller.PostController] [99435cb5] 成功解析学生ID: 1234567890
+2024-11-24 20:02:37 DEBUG [com.example.demo.controller.PostController] [99435cb5] 开始查询数据库...
+2024-11-24 20:02:37 INFO  [com.example.demo.service.PostService] [4c451b91] 开始查询用户帖子, studentId=1234567890, type=love, page=1
+2024-11-24 20:02:37 DEBUG [org.hibernate.SQL] select p1_0.id,p1_0.comment_count,p1_0.content,p1_0.create_time,p1_0.images,p1_0.like_count,p1_0.student_id,p1_0.type from post p1_0 where p1_0.student_id=? and p1_0.type=? order by p1_0.create_time desc limit ?
+2024-11-24 20:02:37 INFO  [com.example.demo.service.PostService] [4c451b91] 查询到 3 条记录
+2024-11-24 20:02:37 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 20:02:37 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 20:02:37 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 20:02:37 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 20:02:37 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 20:02:37 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 20:02:37 DEBUG [com.example.demo.controller.PostController] [99435cb5] 数据库查询完成: {total=3, list=[{images=[], createTime=1732433340362, isLiked=false, likeCount=0, id=5, type=love, user={name=lck, id=1234567890}, content=ewa, commentCount=0}, {images=[], createTime=1732409701927, isLiked=false, likeCount=0, id=2, type=love, user={name=lck, id=1234567890}, content=srbr, commentCount=0}, {images=[], createTime=1732359171586, isLiked=true, likeCount=1, id=1, type=love, user={name=lck, id=1234567890}, content=12345, commentCount=2}]}
+2024-11-24 20:02:37 INFO  [com.example.demo.controller.PostController] [99435cb5] >>> 请求处理完成 <<<
+2024-11-24 20:02:41 INFO  [com.example.demo.util.JwtUtil] [a05d6c45] 开始验证token
+2024-11-24 20:02:41 INFO  [com.example.demo.util.JwtUtil] [a05d6c45] Token验证结果: true, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 20:02:41 INFO  [com.example.demo.util.JwtUtil] [2e25f726] 开始解析token
+2024-11-24 20:02:41 INFO  [com.example.demo.util.JwtUtil] [2e25f726] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 20:02:41 WARN  [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+2024-11-24 20:02:45 INFO  [com.example.demo.util.JwtUtil] [e58ddbec] 开始验证token
+2024-11-24 20:02:45 INFO  [com.example.demo.util.JwtUtil] [e58ddbec] Token验证结果: true, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 20:02:45 INFO  [com.example.demo.util.JwtUtil] [75ee5ae6] 开始解析token
+2024-11-24 20:02:45 INFO  [com.example.demo.util.JwtUtil] [75ee5ae6] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 20:02:45 INFO  [com.example.demo.util.JwtUtil] [c47a3bde] 开始解析token
+2024-11-24 20:02:45 INFO  [com.example.demo.util.JwtUtil] [c47a3bde] Token解析成功 - studentId: 1234567890, 过期时间: Mon Nov 25 19:49:09 CST 2024
+2024-11-24 20:02:45 DEBUG [org.hibernate.SQL] select p1_0.id,p1_0.comment_count,p1_0.content,p1_0.create_time,p1_0.images,p1_0.like_count,p1_0.student_id,p1_0.type from post p1_0 where (? is null or p1_0.type=?) order by p1_0.create_time desc limit ?
+2024-11-24 20:02:45 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 20:02:45 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 20:02:45 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 20:02:45 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?
+2024-11-24 20:02:45 DEBUG [org.hibernate.SQL] select s1_0.student_id,s1_0.create_time,s1_0.grade,s1_0.major,s1_0.name,s1_0.password from student s1_0 where s1_0.student_id=?
+2024-11-24 20:02:45 DEBUG [org.hibernate.SQL] select pl1_0.id from post_likes pl1_0 where pl1_0.post_id=? and pl1_0.student_id=? limit ?

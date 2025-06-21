@@ -1,0 +1,634 @@
+2025-05-26 15:04:10.014 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.5 with PID 15088 (C:\Users\m1950\Desktop\demo\target\classes started by m1950 in C:\Users\m1950\Desktop\demo)
+2025-05-26 15:04:10.027 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-05-26 15:04:10.028 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-26 15:04:10.991 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-26 15:04:11.076 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79 ms. Found 5 JPA repository interfaces.
+2025-05-26 15:04:11.794 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-26 15:04:11.809 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-26 15:04:11.810 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-05-26 15:04:11.889 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-26 15:04:11.889 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1799 ms
+2025-05-26 15:04:11.965 [main] DEBUG c.example.demo.config.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2025-05-26 15:04:12.028 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-26 15:04:12.370 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d14e99e
+2025-05-26 15:04:12.373 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-26 15:04:12.485 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-26 15:04:12.569 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-05-26 15:04:12.620 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-26 15:04:13.009 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-26 15:04:13.881 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-26 15:04:13.991 [main] DEBUG org.hibernate.SQL - 
+    alter table comments 
+       modify column content TEXT not null
+2025-05-26 15:04:14.029 [main] DEBUG org.hibernate.SQL - 
+    alter table post 
+       modify column content TEXT not null
+2025-05-26 15:04:14.042 [main] DEBUG org.hibernate.SQL - 
+    alter table post 
+       modify column images JSON
+2025-05-26 15:04:14.063 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-26 15:04:14.453 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-26 15:04:15.170 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-26 15:04:15.196 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 64432a0c-7fb8-4c35-9f6a-fefe95305fa5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-26 15:04:15.224 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-26 15:04:15.462 [main] INFO  com.example.demo.config.WebConfig - Upload path: C:\Users\m1950\Desktop\demo\uploads
+2025-05-26 15:04:15.466 [main] INFO  com.example.demo.config.WebConfig - Resource handler configured with path: file:C:\Users\m1950\Desktop\demo\uploads\
+2025-05-26 15:04:15.818 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2025-05-26 15:04:15.829 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 6.256 seconds (process running for 6.602)
+2025-05-26 15:04:15.935 [main] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.student_id,
+        s1_0.avatar,
+        s1_0.bio,
+        s1_0.cover_image,
+        s1_0.create_time,
+        s1_0.grade,
+        s1_0.major,
+        s1_0.name,
+        s1_0.password,
+        s1_0.role,
+        s1_0.tags 
+    from
+        student s1_0 
+    where
+        s1_0.student_id=?
+2025-05-26 15:04:15.961 [main] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.student_id,
+        s1_0.avatar,
+        s1_0.bio,
+        s1_0.cover_image,
+        s1_0.create_time,
+        s1_0.grade,
+        s1_0.major,
+        s1_0.name,
+        s1_0.password,
+        s1_0.role,
+        s1_0.tags 
+    from
+        student s1_0 
+    where
+        s1_0.student_id=?
+2025-05-26 15:04:15.985 [main] DEBUG org.hibernate.SQL - 
+    update
+        student 
+    set
+        avatar=?,
+        bio=?,
+        cover_image=?,
+        create_time=?,
+        grade=?,
+        major=?,
+        name=?,
+        password=?,
+        role=?,
+        tags=? 
+    where
+        student_id=?
+2025-05-26 15:21:35.834 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-26 15:21:35.835 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-26 15:21:35.841 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-05-26 15:21:36.199 [http-nio-8080-exec-1] INFO  c.e.demo.controller.AuthController - [250f3bf2] >>> 开始处理登录请求 - studentId: 1234567890 <<<
+2025-05-26 15:21:36.205 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.student_id,
+        s1_0.avatar,
+        s1_0.bio,
+        s1_0.cover_image,
+        s1_0.create_time,
+        s1_0.grade,
+        s1_0.major,
+        s1_0.name,
+        s1_0.password,
+        s1_0.role,
+        s1_0.tags 
+    from
+        student s1_0 
+    where
+        s1_0.student_id=?
+2025-05-26 15:21:36.215 [http-nio-8080-exec-1] INFO  com.example.demo.util.JwtUtil - [63e79d7d] 开始生成token, studentId: 1234567890
+2025-05-26 15:21:36.321 [http-nio-8080-exec-1] INFO  com.example.demo.util.JwtUtil - [63e79d7d] Token生成成功, 过期时间: Wed Jun 25 15:21:36 CST 2025
+2025-05-26 15:21:36.323 [http-nio-8080-exec-1] INFO  c.e.demo.controller.AuthController - [250f3bf2] >>> 登录成功 <<<
+2025-05-26 15:21:41.983 [http-nio-8080-exec-2] INFO  com.example.demo.util.JwtUtil - [799b888c] 开始验证token
+2025-05-26 15:21:42.044 [http-nio-8080-exec-2] INFO  com.example.demo.util.JwtUtil - [799b888c] Token验证结果: true, 过期时间: Wed Jun 25 15:21:36 CST 2025
+2025-05-26 15:21:42.045 [http-nio-8080-exec-2] INFO  com.example.demo.util.JwtUtil - [b96ef43f] 开始解析token
+2025-05-26 15:21:42.050 [http-nio-8080-exec-2] INFO  com.example.demo.util.JwtUtil - [b96ef43f] Token解析成功 - studentId: 1234567890, 过期时间: Wed Jun 25 15:21:36 CST 2025
+2025-05-26 15:21:42.075 [http-nio-8080-exec-2] INFO  com.example.demo.util.JwtUtil - [50c682b3] 开始解析token
+2025-05-26 15:21:42.083 [http-nio-8080-exec-2] INFO  com.example.demo.util.JwtUtil - [50c682b3] Token解析成功 - studentId: 1234567890, 过期时间: Wed Jun 25 15:21:36 CST 2025
+2025-05-26 15:21:42.130 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.comment_count,
+        p1_0.content,
+        p1_0.create_time,
+        p1_0.images,
+        p1_0.like_count,
+        p1_0.student_id,
+        p1_0.type 
+    from
+        post p1_0 
+    where
+        (
+            ? is null 
+            or p1_0.type=?
+        ) 
+    order by
+        p1_0.like_count desc,
+        p1_0.create_time desc 
+    limit
+        ?
+2025-05-26 15:21:42.160 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.student_id,
+        s1_0.avatar,
+        s1_0.bio,
+        s1_0.cover_image,
+        s1_0.create_time,
+        s1_0.grade,
+        s1_0.major,
+        s1_0.name,
+        s1_0.password,
+        s1_0.role,
+        s1_0.tags 
+    from
+        student s1_0 
+    where
+        s1_0.student_id=?
+2025-05-26 15:21:42.171 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        pl1_0.id 
+    from
+        post_likes pl1_0 
+    where
+        pl1_0.post_id=? 
+        and pl1_0.student_id=? 
+    limit
+        ?
+2025-05-26 15:21:42.181 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.student_id,
+        s1_0.avatar,
+        s1_0.bio,
+        s1_0.cover_image,
+        s1_0.create_time,
+        s1_0.grade,
+        s1_0.major,
+        s1_0.name,
+        s1_0.password,
+        s1_0.role,
+        s1_0.tags 
+    from
+        student s1_0 
+    where
+        s1_0.student_id=?
+2025-05-26 15:21:42.186 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        pl1_0.id 
+    from
+        post_likes pl1_0 
+    where
+        pl1_0.post_id=? 
+        and pl1_0.student_id=? 
+    limit
+        ?
+2025-05-26 15:21:42.194 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.student_id,
+        s1_0.avatar,
+        s1_0.bio,
+        s1_0.cover_image,
+        s1_0.create_time,
+        s1_0.grade,
+        s1_0.major,
+        s1_0.name,
+        s1_0.password,
+        s1_0.role,
+        s1_0.tags 
+    from
+        student s1_0 
+    where
+        s1_0.student_id=?
+2025-05-26 15:21:42.198 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        pl1_0.id 
+    from
+        post_likes pl1_0 
+    where
+        pl1_0.post_id=? 
+        and pl1_0.student_id=? 
+    limit
+        ?
+2025-05-26 15:21:42.204 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.student_id,
+        s1_0.avatar,
+        s1_0.bio,
+        s1_0.cover_image,
+        s1_0.create_time,
+        s1_0.grade,
+        s1_0.major,
+        s1_0.name,
+        s1_0.password,
+        s1_0.role,
+        s1_0.tags 
+    from
+        student s1_0 
+    where
+        s1_0.student_id=?
+2025-05-26 15:21:42.211 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        pl1_0.id 
+    from
+        post_likes pl1_0 
+    where
+        pl1_0.post_id=? 
+        and pl1_0.student_id=? 
+    limit
+        ?
+2025-05-26 15:21:42.218 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.student_id,
+        s1_0.avatar,
+        s1_0.bio,
+        s1_0.cover_image,
+        s1_0.create_time,
+        s1_0.grade,
+        s1_0.major,
+        s1_0.name,
+        s1_0.password,
+        s1_0.role,
+        s1_0.tags 
+    from
+        student s1_0 
+    where
+        s1_0.student_id=?
+2025-05-26 15:21:42.223 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        pl1_0.id 
+    from
+        post_likes pl1_0 
+    where
+        pl1_0.post_id=? 
+        and pl1_0.student_id=? 
+    limit
+        ?
+2025-05-26 15:21:42.230 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.student_id,
+        s1_0.avatar,
+        s1_0.bio,
+        s1_0.cover_image,
+        s1_0.create_time,
+        s1_0.grade,
+        s1_0.major,
+        s1_0.name,
+        s1_0.password,
+        s1_0.role,
+        s1_0.tags 
+    from
+        student s1_0 
+    where
+        s1_0.student_id=?
+2025-05-26 15:21:42.236 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        pl1_0.id 
+    from
+        post_likes pl1_0 
+    where
+        pl1_0.post_id=? 
+        and pl1_0.student_id=? 
+    limit
+        ?
+2025-05-26 15:21:42.243 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.student_id,
+        s1_0.avatar,
+        s1_0.bio,
+        s1_0.cover_image,
+        s1_0.create_time,
+        s1_0.grade,
+        s1_0.major,
+        s1_0.name,
+        s1_0.password,
+        s1_0.role,
+        s1_0.tags 
+    from
+        student s1_0 
+    where
+        s1_0.student_id=?
+2025-05-26 15:21:42.251 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        pl1_0.id 
+    from
+        post_likes pl1_0 
+    where
+        pl1_0.post_id=? 
+        and pl1_0.student_id=? 
+    limit
+        ?
+2025-05-26 15:21:42.259 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.student_id,
+        s1_0.avatar,
+        s1_0.bio,
+        s1_0.cover_image,
+        s1_0.create_time,
+        s1_0.grade,
+        s1_0.major,
+        s1_0.name,
+        s1_0.password,
+        s1_0.role,
+        s1_0.tags 
+    from
+        student s1_0 
+    where
+        s1_0.student_id=?
+2025-05-26 15:21:42.268 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        pl1_0.id 
+    from
+        post_likes pl1_0 
+    where
+        pl1_0.post_id=? 
+        and pl1_0.student_id=? 
+    limit
+        ?
+2025-05-26 15:21:43.074 [http-nio-8080-exec-8] INFO  com.example.demo.util.JwtUtil - [aad4e4d3] 开始验证token
+2025-05-26 15:21:43.080 [http-nio-8080-exec-8] INFO  com.example.demo.util.JwtUtil - [aad4e4d3] Token验证结果: true, 过期时间: Wed Jun 25 15:21:36 CST 2025
+2025-05-26 15:21:43.082 [http-nio-8080-exec-8] INFO  com.example.demo.util.JwtUtil - [f8d4c510] 开始解析token
+2025-05-26 15:21:43.087 [http-nio-8080-exec-8] INFO  com.example.demo.util.JwtUtil - [f8d4c510] Token解析成功 - studentId: 1234567890, 过期时间: Wed Jun 25 15:21:36 CST 2025
+2025-05-26 15:21:43.092 [http-nio-8080-exec-8] INFO  com.example.demo.util.JwtUtil - [8fa1f54f] 开始解析token
+2025-05-26 15:21:43.095 [http-nio-8080-exec-8] INFO  com.example.demo.util.JwtUtil - [8fa1f54f] Token解析成功 - studentId: 1234567890, 过期时间: Wed Jun 25 15:21:36 CST 2025
+2025-05-26 15:21:43.103 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.comment_count,
+        p1_0.content,
+        p1_0.create_time,
+        p1_0.images,
+        p1_0.like_count,
+        p1_0.student_id,
+        p1_0.type 
+    from
+        post p1_0 
+    where
+        (
+            ? is null 
+            or p1_0.type=?
+        ) 
+    order by
+        p1_0.create_time desc 
+    limit
+        ?
+2025-05-26 15:21:43.118 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.student_id,
+        s1_0.avatar,
+        s1_0.bio,
+        s1_0.cover_image,
+        s1_0.create_time,
+        s1_0.grade,
+        s1_0.major,
+        s1_0.name,
+        s1_0.password,
+        s1_0.role,
+        s1_0.tags 
+    from
+        student s1_0 
+    where
+        s1_0.student_id=?
+2025-05-26 15:21:43.127 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        pl1_0.id 
+    from
+        post_likes pl1_0 
+    where
+        pl1_0.post_id=? 
+        and pl1_0.student_id=? 
+    limit
+        ?
+2025-05-26 15:21:43.136 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.student_id,
+        s1_0.avatar,
+        s1_0.bio,
+        s1_0.cover_image,
+        s1_0.create_time,
+        s1_0.grade,
+        s1_0.major,
+        s1_0.name,
+        s1_0.password,
+        s1_0.role,
+        s1_0.tags 
+    from
+        student s1_0 
+    where
+        s1_0.student_id=?
+2025-05-26 15:21:43.145 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        pl1_0.id 
+    from
+        post_likes pl1_0 
+    where
+        pl1_0.post_id=? 
+        and pl1_0.student_id=? 
+    limit
+        ?
+2025-05-26 15:21:43.154 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.student_id,
+        s1_0.avatar,
+        s1_0.bio,
+        s1_0.cover_image,
+        s1_0.create_time,
+        s1_0.grade,
+        s1_0.major,
+        s1_0.name,
+        s1_0.password,
+        s1_0.role,
+        s1_0.tags 
+    from
+        student s1_0 
+    where
+        s1_0.student_id=?
+2025-05-26 15:21:43.162 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        pl1_0.id 
+    from
+        post_likes pl1_0 
+    where
+        pl1_0.post_id=? 
+        and pl1_0.student_id=? 
+    limit
+        ?
+2025-05-26 15:21:43.170 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.student_id,
+        s1_0.avatar,
+        s1_0.bio,
+        s1_0.cover_image,
+        s1_0.create_time,
+        s1_0.grade,
+        s1_0.major,
+        s1_0.name,
+        s1_0.password,
+        s1_0.role,
+        s1_0.tags 
+    from
+        student s1_0 
+    where
+        s1_0.student_id=?
+2025-05-26 15:21:43.179 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        pl1_0.id 
+    from
+        post_likes pl1_0 
+    where
+        pl1_0.post_id=? 
+        and pl1_0.student_id=? 
+    limit
+        ?
+2025-05-26 15:21:43.188 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.student_id,
+        s1_0.avatar,
+        s1_0.bio,
+        s1_0.cover_image,
+        s1_0.create_time,
+        s1_0.grade,
+        s1_0.major,
+        s1_0.name,
+        s1_0.password,
+        s1_0.role,
+        s1_0.tags 
+    from
+        student s1_0 
+    where
+        s1_0.student_id=?
+2025-05-26 15:21:43.196 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        pl1_0.id 
+    from
+        post_likes pl1_0 
+    where
+        pl1_0.post_id=? 
+        and pl1_0.student_id=? 
+    limit
+        ?
+2025-05-26 15:21:43.204 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.student_id,
+        s1_0.avatar,
+        s1_0.bio,
+        s1_0.cover_image,
+        s1_0.create_time,
+        s1_0.grade,
+        s1_0.major,
+        s1_0.name,
+        s1_0.password,
+        s1_0.role,
+        s1_0.tags 
+    from
+        student s1_0 
+    where
+        s1_0.student_id=?
+2025-05-26 15:21:43.212 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        pl1_0.id 
+    from
+        post_likes pl1_0 
+    where
+        pl1_0.post_id=? 
+        and pl1_0.student_id=? 
+    limit
+        ?
+2025-05-26 15:21:43.222 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.student_id,
+        s1_0.avatar,
+        s1_0.bio,
+        s1_0.cover_image,
+        s1_0.create_time,
+        s1_0.grade,
+        s1_0.major,
+        s1_0.name,
+        s1_0.password,
+        s1_0.role,
+        s1_0.tags 
+    from
+        student s1_0 
+    where
+        s1_0.student_id=?
+2025-05-26 15:21:43.230 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        pl1_0.id 
+    from
+        post_likes pl1_0 
+    where
+        pl1_0.post_id=? 
+        and pl1_0.student_id=? 
+    limit
+        ?
+2025-05-26 15:21:43.241 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.student_id,
+        s1_0.avatar,
+        s1_0.bio,
+        s1_0.cover_image,
+        s1_0.create_time,
+        s1_0.grade,
+        s1_0.major,
+        s1_0.name,
+        s1_0.password,
+        s1_0.role,
+        s1_0.tags 
+    from
+        student s1_0 
+    where
+        s1_0.student_id=?
+2025-05-26 15:21:43.248 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        pl1_0.id 
+    from
+        post_likes pl1_0 
+    where
+        pl1_0.post_id=? 
+        and pl1_0.student_id=? 
+    limit
+        ?
+2025-05-26 15:21:49.652 [http-nio-8080-exec-4] INFO  com.example.demo.util.JwtUtil - [57d9bf42] 开始验证token
+2025-05-26 15:21:49.658 [http-nio-8080-exec-4] INFO  com.example.demo.util.JwtUtil - [57d9bf42] Token验证结果: true, 过期时间: Wed Jun 25 15:21:36 CST 2025
+2025-05-26 15:21:49.660 [http-nio-8080-exec-4] INFO  com.example.demo.util.JwtUtil - [e110e81e] 开始解析token
+2025-05-26 15:21:49.666 [http-nio-8080-exec-4] INFO  com.example.demo.util.JwtUtil - [e110e81e] Token解析成功 - studentId: 1234567890, 过期时间: Wed Jun 25 15:21:36 CST 2025
+2025-05-26 15:21:49.675 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+2025-05-26 15:21:53.860 [http-nio-8080-exec-5] INFO  com.example.demo.util.JwtUtil - [a8a632e9] 开始验证token
+2025-05-26 15:21:53.866 [http-nio-8080-exec-5] INFO  com.example.demo.util.JwtUtil - [a8a632e9] Token验证结果: true, 过期时间: Wed Jun 25 15:21:36 CST 2025
+2025-05-26 15:21:53.868 [http-nio-8080-exec-5] INFO  com.example.demo.util.JwtUtil - [075c3568] 开始解析token
+2025-05-26 15:21:53.875 [http-nio-8080-exec-5] INFO  com.example.demo.util.JwtUtil - [075c3568] Token解析成功 - studentId: 1234567890, 过期时间: Wed Jun 25 15:21:36 CST 2025
+2025-05-26 15:21:53.878 [http-nio-8080-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+2025-05-26 15:25:43.588 [http-nio-8080-exec-6] INFO  c.e.demo.controller.AuthController - [7ac87a79] >>> 开始处理登录请求 - studentId: 1234567890 <<<
+2025-05-26 15:25:43.593 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.student_id,
+        s1_0.avatar,
+        s1_0.bio,
+        s1_0.cover_image,
+        s1_0.create_time,
+        s1_0.grade,
+        s1_0.major,
+        s1_0.name,
+        s1_0.password,
+        s1_0.role,
+        s1_0.tags 
+    from
+        student s1_0 
+    where
+        s1_0.student_id=?
+2025-05-26 15:25:43.601 [http-nio-8080-exec-6] INFO  com.example.demo.util.JwtUtil - [3281fd18] 开始生成token, studentId: 1234567890
+2025-05-26 15:25:43.606 [http-nio-8080-exec-6] INFO  com.example.demo.util.JwtUtil - [3281fd18] Token生成成功, 过期时间: Wed Jun 25 15:25:43 CST 2025
+2025-05-26 15:25:43.607 [http-nio-8080-exec-6] INFO  c.e.demo.controller.AuthController - [7ac87a79] >>> 登录成功 <<<
